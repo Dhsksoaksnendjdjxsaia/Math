@@ -1,0 +1,177 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* تنسيق الرأس والقائمة العلوية */
+header {
+    background-color: #2980b9;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+main h2 {
+    color: #2980b9;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+section {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+section p, section ul {
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* تنسيق الزر وعناصر الإدخال */
+button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* تنسيق التذييل */
+footer {
+    background-color: #2980b9;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+#result {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+#result.success {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+#result.error {
+    background-color: #e74c3c;
+    color: #fff;
+}
